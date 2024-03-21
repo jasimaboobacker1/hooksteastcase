@@ -1,0 +1,11 @@
+<div class="container">
+    
+    <div class="box">
+        <h2 style="text-align: center;">Task 1</h2>
+        <h6 style="text-align: end;">Parent Component</h6>
+        <label yle="color: black;">Add Books</label>
+        <input style="margin-top: 10px;" type="text" placeholder="Add Book"  [(ngModel)]="newBookTitle">
+        <button style="color: black;" (click)="addBook()">Add</button>
+        <app-child [books]="books"></app-child>
+        </div>
+    </div>
